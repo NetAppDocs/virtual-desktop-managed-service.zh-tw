@@ -1,0 +1,134 @@
+---
+sidebar: sidebar 
+permalink: serviceoffering.servicesummary.html 
+summary: VDM服務項目摘要 
+keywords:  
+---
+= 虛擬桌面託管服務（VDM）服務摘要
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 使用者資源配置
+
+
+NOTE: 本文旨在準確說明VDM服務的技術詳細資料。服務詳細資料可能隨時變更、本文不代表NetApp與任何客戶或合作夥伴之間的任何現有協議、合約或其他安排的修改或變更。
+
+
+
+=== 共享使用者（SKU：VDMs-Subs-share-User）
+
+共用使用者工作階段可在工作階段主機虛擬機器（SHVM）上執行、最多可有10個使用者工作階段。分配的共享SHVM總數將確保環境中每10個共享使用者至少有一個共享SHVM。
+
+*分配給每個共享使用者的資源：*
+
+* vCPU核心的8/10分之一
+* 6.4 GB RAM
+* 25 GiB儲存設備
+
+
+*共享SHVM技術詳細資料：*
+
+* 通常來自 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["ESv3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series["Eav4."] 和 link:https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series["Easyv4"] Azure虛擬機器系列。
+* 128 GiB標準SSD作業系統磁碟
+* 適用於虛擬桌面的Windows 10 Enterprise
+* FSLogix附加的Container使用者設定檔
+* 公司共用的附加儲存設備
+
+
+
+
+=== VDI使用者（SKU：VDMs-subs-vVDI使用者）
+
+VDI使用者的工作階段會在不同時裝載任何其他使用者工作階段的專用工作階段主機虛擬機器（SHVM）上執行。VDI SHVM總數等於環境中VDI使用者總數。
+
+*每個VDI使用者所配置的資源：*
+
+* 2個vCPU核心
+* 8 GB RAM
+* 25 GiB儲存設備
+
+
+* VDI SHVM技術詳細資料：*
+
+* 通常來自 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series["Dsv3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv4-dsv4-series["達維4"] 和 link:https://docs.microsoft.com/en-us/azure/virtual-machines/dav4-dasv4-series["Dasv4"] Azure虛擬機器系列。
+* 128 GiB標準HDD作業系統磁碟
+* 適用於虛擬桌面的Windows 10 Enterprise
+* FSLogix附加的Container使用者設定檔
+* 公司共用的附加儲存設備
+
+
+
+
+=== GPU使用者（SKU：VDMs-subs-GPU使用者）
+
+GPU使用者的工作階段會在不同時裝載任何其他使用者工作階段的專用工作階段主機虛擬機器（SHVM）上執行。GPU SHVM總數等於環境中GPU使用者總數。
+
+*每GPU使用者所分配的資源：*
+
+* 8 GiB GPU RAM
+* 25 GiB儲存設備
+
+
+* GPU SHVM技術詳細資料：*
+
+* 通常來自 link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv3-series["NVv3"] 和 link:https://docs.microsoft.com/en-us/azure/virtual-machines/nvv4-series["NVv4"] Azure虛擬機器系列。
+* 128 GiB標準HDD作業系統磁碟
+* 適用於虛擬桌面的Windows 10 Enterprise
+* FSLogix附加的Container使用者設定檔
+* 公司共用的附加儲存設備
+
+
+
+
+== 其他VDM SKU
+
+
+
+=== 商業伺服器（SKU：VDMs、Azure、企業VM）
+
+可以將商業伺服器新增至環境、以支援應用程式和服務。
+
+*每部企業伺服器VM至少分配：*
+
+* 8個vCPU核心
+* 64 GB RAM
+* 128 GiB標準SSD作業系統磁碟
+* Windows Server 2012R2/2016/2019
+* 通常來自 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev3-esv3-series["ESv3"]、 link:https://docs.microsoft.com/en-us/azure/virtual-machines/ev4-esv4-series["Eav4."] 和 link:https://docs.microsoft.com/en-us/azure/virtual-machines/eav4-easv4-series["Easyv4"] Azure虛擬機器系列。
+
+
+
+
+=== 額外儲存設備（SKU：VDMs、1TB儲存設備- HPRSCLR）
+
+_Data Storage Layer _是VDM環境的主要儲存機制、可在Azure Files或Azure NetApp Files Sfi（anf）上執行。使用的儲存技術取決於購買的VDI使用者總數。額外容量可以1TiB為單位增加。
+
+使用者設定檔、使用者資料、公司共用、應用程式資料和資料庫都應該從此儲存服務執行。最佳做法是盡量避免將資料儲存在VM磁碟上。
+
+容量是指每位使用者分配（每位使用者25 GiB）和所購買額外Tib儲存設備的總和。
+
+|===
+| 度量 | link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets["Azure檔案GPv2"] | link:https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["ANF標準"] | link:https://docs.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-service-levels["ANF Premium"] 
+
+
+| 使用者計數 | 10-49 | 50-249-50 | 超過250個 
+
+
+| 最小尺寸 | 250 GiB | 4 TiB | 4 TiB 
+
+
+| IOPS | 最多1、000個 | 高達250/ TiB | 每TiB最高可達1、000次 
+|===

@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: serviceoffering.prerequisites.html 
+summary: VDM先決條件 
+keywords:  
+---
+= 虛擬桌面託管服務（VDM）先決條件
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== M365授權
+
+VDM採用Microsoft Windows Virtual Desktop（WVD）技術打造而成。WVD先決條件要求為終端使用者指派特定的Microsoft 365（M365）授權。此授權不包含在VDM訂閱中、NetApp不會銷售或以其他方式提供此授權。
+
+遵守M365/WVD授權的責任由客戶公司、合作夥伴公司及/或其M365廠商負責。
+
+M365計畫有多種、可支援VDM的WVD授權、詳情請參閱 link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/["請參閱此處"]。
+
+
+
+== M365/Azure AD租戶
+
+客戶必須擁有現有的Azure AD租戶。Microsoft 365採用相同的Azure AD租戶結構、因此符合M365授權要求（如上所述）也能滿足此需求。
+
+
+
+== CSP經銷商關係
+
+NetApp使用我們與Microsoft的CSP合作關係、將VDM部署至專屬的Azure訂閱。若要部署此訂閱、NetApp必須與客戶的Azure AD租戶建立經銷商關係。客戶Azure AD租戶的全域管理員可在此接受此關係：
+
+https://admin.microsoft.com/Adminportal/Home?invType=ResellerRelationship&partnerId=47c1f6d2-b112-48e0-915f-4304efffb3e8&msppId=0&DAP=true#/BillingAccounts/partner-invitation[]
+
+多重合作夥伴功能不具備：
+
+* 變更客戶現有的任何訂閱內容
+* 轉換客戶現有的訂閱或帳戶所有權
+* 變更現有任何訂閱的條款或客戶義務
+* 變更訂閱的記錄合作夥伴
+* 詳細資訊請參閱： https://docs.microsoft.com/en-us/partner-center/multipartner[]
+
+
+
+
+=== 委派的管理權限
+
+邀請連結（如上所述）包含委派管理權限的要求。接受將授予客戶Azure AD租戶中的NetApp Global Admin和Helpdesk管理員角色。
+
+
+
+== 虛擬網路範圍
+
+VDM將部署在Azure的虛擬網路上。此網路使用的/20 IP範圍不能與環境中的其他網路重疊。
+
+在任何在VDM虛擬網路與任何其他客戶網路之間新增網路連線的情況下、與其他網路IP範圍重疊會中斷VDM。因此、務必將完全未使用的/20範圍專用於VDM。
+
+/20網路範圍必須位於下列其中一個IP範圍內：
+
+* 10.0.0.0–10.255.255.255
+* 172.16.0.0–172.31.255
+* 192：168：0–192：255
+
+
+
+
+== 部署VDM工作表
+
+客戶/合作夥伴必須填寫Deploy VDM工作表、網址為：https://www.deployvdms.com/[]
+
+
+
+== 現有的AD整合
+
+將VDM與現有Active Directory網域控制器（AD DC）整合、需要幾項額外的先決條件：
+
+
+
+=== 本機網域管理認證
+
+必須在現有網域上擁有網域加入權限的本機網域管理員帳戶、才能建立整合。
+
+
+
+=== Azure AD Connect
+
+WVD需要使用AD Connect將Azure AD AD與AD DC同步。如果尚未設定、請這麼做 link:https://www.microsoft.com/en-us/download/details.aspx?id=47594["公用程式"] 必須在AD DC上安裝和設定。
+
+/== vNet對等網路的網路貢獻者角色/==本機閘道裝置設定VPN的管理權限/== DNS區域（需要更多技術資訊）/==無多網域資源、使用者必須位於我們要部署的網域中

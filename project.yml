@@ -1,0 +1,39 @@
+---
+settings:
+  name: Virtual Desktop Managed Service
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-tw,us-en,ja-jp,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: VDM文件
+    url: "/index.html"
+  - title: 快速入門
+    entries:
+    - title: 先決條件
+      url: "/serviceoffering.prerequisites.html"
+    - title: 服務摘要
+      url: "/serviceoffering.servicesummary.html"
+  - title: 教學課程
+    entries:
+    - title: 安裝應用程式
+      url: "/applications.installapplications.html"
+    - title: 更新部署VM映像
+      url: "/images.updateimages.html"
+    - title: 將使用者指派給應用程式群組
+      url: "/users.assigntoappgroup.html"
+    - title: 取得網域管理認證
+      url: "/administration.pam.html"
+    - title: 新增使用者存取權
+      url: "/users.add.html"
+    - title: 移除使用者存取權
+      url: "/users.remove.html"
+    - title: 新增/移除系統管理員
+      url: "/administration.addremoveadmins.html"
+  - title: VDM常見問題集
+    entries:
+    - title: VDS管理權限
+      url: "/FAQ.vdsadminpermissions.html"

@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: applications.installapplications.html 
+summary: 在主機集區內的工作階段主機上安裝應用程式 
+keywords:  
+---
+= 在工作階段主機虛擬機器上安裝應用程式
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 應用程式交付方法
+
+使用者可以存取任何安裝工作階段主機虛擬機器（SHVM）的應用程式、並在其中執行使用者工作階段。
+
+根據使用者群組的成員資格、將使用者指派給SHVM集區（「主機集區」）。該主機集區中的每個SHVM都是以相同的VM映像為基礎、擁有相同的應用程式、並在相同的VM資源上執行。每次使用者連線時、都會將其指派給主機集區中最少的目前使用者工作階段。
+
+透過從主機集區中的每個SHVM新增或移除應用程式、VDM管理員可以控制哪些應用程式VDM使用者可以存取。
+
+從每個SHVM新增（或移除）應用程式、可直接在每個SHVM上執行、或是在單一VM映像上執行、然後再部署到主機集區中的所有SHVM上。
+
+本文將直接在SHVM上安裝應用程式。VM映像管理涵蓋在中 link:images.updateimages.html["本文"]。
+
+
+
+=== 手動存取
+
+VDM管理入口網站可讓您透過所有SHVM和企業伺服器的即時本機管理帳戶、直接存取每個VM。此存取可用於手動連線至每個VM、以手動安裝應用程式並進行其他組態變更。
+
+此功能可在「工作區」>「伺服器」>「動作」>「連線」中找到
+
+[role="thumb"]
+image:applications.installapplications-171af.png["900900"]
+
+如果需要網域管理認證、VDM會使用權限存取管理（PAM）功能來產生網域管理認證。詳細資料可以是 link:administration.pam.html["請參閱此處"]。
+
+
+
+=== VDM Automation
+
+透過VDM入口網站、「指令碼事件」區段包含遠端執行程式碼的功能。
+
+在指令碼事件中、儲存庫索引標籤包含NetApp發佈的「全域」指令碼。您可以使用「+新增指令碼」按鈕來新增自訂指令碼。
+
+在「指令碼化事件」中、「活動」索引標籤包含觸發程序、可讓指令碼針對一組VM執行。對於VDM、「手動」和「排程」事件類型最適合在適當的虛擬機器上推送指令碼。
+
+
+NOTE: 活動有許多稱為「事件類型」的可用觸發程序。對於VDM、「應用程式安裝」和「應用程式解除安裝」類型不適用。這些都是RDS專屬的觸發事件、不應用於VDM、因為VDM是WVD型服務、而且必須遵循RDS的設計架構。
+
+
+
+=== 其他自動化工具
+
+VDI中的虛擬機器可使用協力廠商管理工具進行管理。應用程式變更和其他VM組態變更可透過任何相容的工具套用。

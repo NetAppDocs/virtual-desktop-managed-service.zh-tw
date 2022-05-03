@@ -1,0 +1,137 @@
+---
+sidebar: sidebar 
+permalink: index.html 
+summary: 歡迎使用Virtual Desktop託管服務的文件入口網站。 
+keywords:  
+---
+= 虛擬桌面託管服務文件
+:allow-uri-read: 
+
+
+
+
+== 總覽
+
+NetApp的虛擬桌面託管服務（VDM）解決了在公有雲中部署和管理虛擬桌面的複雜度、並以託管VDI即服務平台的形式提供。
+
+
+
+== 獲得支援
+
+電子郵件支援：support@spotpc.netapp.com
+
+電話支援：8444.645.6789
+
+link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+正常支援營業時間：週一至週五、中部時間上午7：00至下午7：00。
+
+* 非營業時間（待命）支援僅透過電話提供。
+
+
+
+
+== Windows Virtual Desktop（WVD）用戶端
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-windows-7-10["適用於Windows用戶端的Microsoft WVD"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-web["Microsoft WVD Web用戶端"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-android["適用於Android用戶端的Microsoft WVD"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-macos["適用於MacOS用戶端的Microsoft WVD"]
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/connect-ios["適用於iOS用戶端的Microsoft WVD"]
+
+
+
+
+== 服務元件
+
+VDM是一項共同管理的服務產品、結合NetApp與Microsoft的多項技術、並在EUC市場中應用20多年的最佳實務做法。所選元件清單下方會列出。並非所有元件都會在所有部署中使用、因為客戶需求各異。
+
+
+
+=== NetApp
+
+* link:https://azure.microsoft.com/en-us/services/netapp/["產品統計（ ANF ） Azure NetApp Files"]
++
+** 49位以上使用者部署的資料儲存層是以ANF為基礎。
+** 對於使用者少於250人的部署、則使用標準效能層。
+** 對於使用者人數超過249人的部署、則使用高階效能層級。
+
+
+* link:https://cloud.netapp.com/cloud-backup["NetApp雲端備份"]
++
+** NetApp Cloud Backup可用於備份ANF儲存磁碟區。
+
+
+* link:https://cloud.netapp.com/cloud-sync-service["NetApp Cloud Sync"]
++
+** 當Cloud Sync ANF是資料儲存層技術時、可使用NetApp功能將資料移轉至VDM。
+
+
+* link:https://cloud.netapp.com/cloud-insights["NetApp Cloud Insights"]
++
+** 我們Cloud Insights 的支援與服務團隊會使用NetApp產品來監控效能。
+
+
+* link:https://cloudjumper.zendesk.com["NetApp VDM支援"]
++
+** VDM包括全年無休的事件支援、以及由專業NetApp支援團隊提供的入門服務
+
+
+
+
+
+
+=== Microsoft
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-files-scale-targets#storage-account-scale-targets["Azure檔案（自動對焦）"]
++
+** 使用者人數少於50人的部署所需的資料儲存層、是以自動對焦技術為基礎。我們在GPv2儲存帳戶中設定「交易最佳化」層級。
+** 對於使用者人數超過49人的部署、則使用ANF。
+
+
+* link:https://azure.microsoft.com/en-us/services/backup/["Azure Cloud Backup"]
++
+** Azure Cloud Backup可用於備份自動對焦儲存磁碟區和虛擬機器。
+
+
+* link:https://docs.microsoft.com/en-us/azure/storage/files/storage-sync-files-planning["Azure檔案同步"]
++
+** 當自動對焦是資料儲存層技術時、Azure File Sync可用於將資料移轉至VDM。
+
+
+* link:https://azure.microsoft.com/en-us/services/azure-defender/["Azure Defender"]
++
+** VDM會啟動（並包含）Azure Defender、這是環境中所有虛擬機器的進階安全服務。客戶及/或其IT服務供應商會透過Azure安全中心執行管理與管理。管理Azure安全中心並非VDM所包含的服務。
+
+
+* link:https://azure.microsoft.com/en-us/services/virtual-machines/windows/["Azure虛擬機器"]
++
+** VDM非常仰賴Windows Azure虛擬機器來代管使用者工作階段和客戶應用程式。
+
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview["Azure虛擬網路對等關係"]
++
+** VDM可能運用Azure虛擬網路對等功能、與客戶現有的Active Directory網域控制器（AD DC）整合。
+
+
+* link:https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways["Azure VPN"]
++
+** VDM可能利用Azure站台對站台VPN、與客戶現有的Active Directory網域控制器（AD DC）整合。
+
+
+* link:https://docs.microsoft.com/en-us/azure/virtual-desktop/overview["Windows虛擬桌面（WVD）"]
++
+** VDM運用原生WVD功能來支援使用者工作階段代理、驗證、Windows授權等。
+
+
+* link:https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect["Azure AD Connect"]
++
+** WVD要求本機網域（AD DC）和Azure AD必須透過Azure AD Connect應用程式同步。
+
+
+* link:https://azure.microsoft.com/en-us/pricing/details/virtual-desktop/["Microsoft 365（M365）"]
++
+** 工作階段主機的WVD使用者工作階段和Windows 10 Enterprise會透過特定的M365授權類型授權給使用者。將適當的M365授權指派給所有的VDM使用者、是WVD和VDM的必要條件。此授權不包含在VDM中。客戶及/或其IT服務供應商有責任管理M365授權。
+
+
+

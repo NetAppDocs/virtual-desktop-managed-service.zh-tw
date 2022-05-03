@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="9daa07991ed43a576fef187952656736" category="summary">取得VDM虛擬機器的網域存取權</block>
+  <block id="602fe15b3412a0a253f98540e696d1c0" category="doc">在VDM中產生網域管理認證</block>
+  <block id="c0f2dc7167ea702651c95c23c8e2eb5a" category="section-title">權限存取管理</block>
+  <block id="d7e1a322cd93b3196ed2ce03fd02d619" category="paragraph">VDM管理員可獲授予「PAM核准者」角色、讓管理員能夠授予PAM要求。</block>
+  <block id="b5e0fb09be70dfe486265719adc87d1c" category="paragraph">當即時本機管理員認證不足時、PAM要求會產生網域層級管理員帳戶、以用於在VDM VM上進行驗證。</block>
+  <block id="899617d12a06d268217a5883eb83b82c" category="paragraph">任何VDM管理員都可以提交PAM要求、但只有具備PAM核准者角色的管理員才能核准要求。PAM核准者可以申請及核准自己的申請。</block>
+  <block id="aea32282c28940c6ac542b7bd62a70b3" category="section-title">提交PAM要求</block>
+  <block id="31abc89f6fc876f29e040026e20bd6c2" category="list-title">以提交PAM要求</block>
+  <block id="2cb738f01acc3f0c17681c8c76ab0a69" category="list-text">瀏覽至右上角的管理員使用者名稱、然後按一下「設定」</block>
+  <block id="bd0a2a93fffc24975ba1853fa1149f5b" category="list-text">選取「PAM要求」索引標籤</block>
+  <block id="a571b504c697c594943d6e9c5c087775" category="list-text">按一下「+新增」</block>
+  <block id="5ba8e29ceed72746a18a29d6708840d0" category="list-text">選取期間、之後這些認證資料將過期</block>
+  <block id="2c1927771abff53406ba90bdea239e3f" category="list-text">選擇部署</block>
+  <block id="2f25a0df47ff1cf7f053a4419e8a72ff" category="list-text">輸入可提供認證資料的電子郵件地址。這可以是任何電子郵件地址、允許第三方（例如廠商）獲得網域認證。</block>
+  <block id="1dbdc24971d689d0073e98af19eeb8fe" category="list-text">輸入可接收文字訊息的電話號碼</block>
+  <block id="60aa2e4a9c8c74f16e29354ab59eee7a" category="list-text">輸入記錄和PAM核准者要審查的任何附註。</block>
+  <block id="5031e28239e8f60089e6ec2c48ce180e" category="list-text">按一下「新增要求」</block>
+  <block id="209774dd0e6ea93eb16bd5a8817c6f79" category="section-title">核准PAM要求</block>
+  <block id="8d6292bd781be3efa75297b09327c5d2" category="list-title">以檢閱及核准/拒絕PAM要求</block>
+  <block id="d6d7d89a00dd2cdcfae222003e03198a" category="list-text">。瀏覽至右上角的管理員使用者名稱、然後按一下「設定」</block>
+  <block id="1e25fde4d5df52504c3c378803f196b5" category="list-text">選取「PAM要求」索引標籤、然後按一下該要求</block>
+  <block id="df08ce57f98ee9fe5ed9d38b2d6d2aeb" category="list-text">檢閱申請、然後按一下「Approve（核准）」或「Reject（拒絕）」</block>
+  <block id="004bf02cb11b8e69065a56d3e2f499e6" category="list-text">輸入任何與核准/拒絕決策相關的附註</block>
+  <block id="ba1debcf140af674383a994a011f4378" category="section-title">使用PAM產生的認證資料</block>
+  <block id="138f0560a7d09acb7363aa3e31c607a0" category="paragraph">核准後、系統會傳送一封確認電子郵件、以啟動所提供的認證資料：</block>
+  <block id="7206e87cd374427fb9e10cdf1670e31e" category="inline-image-macro">900900</block>
+  <block id="546d735f3a5b13a8291f291ceca54e43" category="paragraph"><block ref="546d735f3a5b13a8291f291ceca54e43" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5455149d315bd4b66490fb089ea0b5fa" category="paragraph">依照「啟用要求」連結、使用者將會前往下一頁、並透過SMS傳送確認代碼給他們。系統也會要求他們設定安全密碼。</block>
+  <block id="08a40eb602733fda5f16835b431f8811" category="paragraph"><block ref="08a40eb602733fda5f16835b431f8811" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9264aee8437d85fc53a0b42286f24cb4" category="paragraph">成功驗證帳戶後、使用者會收到使用者名稱的確認訊息。</block>
+  <block id="4b0fe9652493940a58ca8d7a9f4c2cf3" category="paragraph"><block ref="4b0fe9652493940a58ca8d7a9f4c2cf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98bc530693a52fafe469f30614e8f883" category="summary">歡迎使用Virtual Desktop託管服務的文件入口網站。</block>
+  <block id="9f817877212aa8b2757f521dbf32cd41" category="doc">虛擬桌面託管服務文件</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">總覽</block>
+  <block id="2637b7de7d33d19378c198b8be6838bf" category="paragraph">NetApp的虛擬桌面託管服務（VDM）解決了在公有雲中部署和管理虛擬桌面的複雜度、並以託管VDI即服務平台的形式提供。</block>
+  <block id="ad03304ebb58420571f6373a6c9d8ec7" category="section-title">獲得支援</block>
+  <block id="54defe6db64b2cfbdd2cd6ccc464206d" category="paragraph">電子郵件支援：support@spotpc.netapp.com</block>
+  <block id="88cc9e245d04dc16592a51f8acaca39e" category="paragraph">電話支援：8444.645.6789</block>
+  <block id="761897184911914403fb24eff6e9fa73" category="inline-link-macro">VDM支援入口網站</block>
+  <block id="8c0bcd4812f78591782afec72a6d71cd" category="paragraph"><block ref="8c0bcd4812f78591782afec72a6d71cd" category="inline-link-macro-rx"></block></block>
+  <block id="0b7ecd3f16fdb38fd9df7824bc8d7b1f" category="paragraph">正常支援營業時間：週一至週五、中部時間上午7：00至下午7：00。</block>
+  <block id="d13c2f018ea5180520061bfbbc26db45" category="list-text">非營業時間（待命）支援僅透過電話提供。</block>
+  <block id="5415e4af755fea4714f1671504efcd13" category="section-title">Windows Virtual Desktop（WVD）用戶端</block>
+  <block id="dfdf288956a9f63a5bae66aff6f73337" category="inline-link-macro">適用於Windows用戶端的Microsoft WVD</block>
+  <block id="3c6a3d5491e156e43159551aea166eac" category="list-text"><block ref="3c6a3d5491e156e43159551aea166eac" category="inline-link-macro-rx"></block></block>
+  <block id="4b43e9013fc9eb09c085b7c544ded089" category="inline-link-macro">Microsoft WVD Web用戶端</block>
+  <block id="7fd34e8df1747b4bff9245d9132b966b" category="list-text"><block ref="7fd34e8df1747b4bff9245d9132b966b" category="inline-link-macro-rx"></block></block>
+  <block id="b4611a2d3d5a5e3739a1c6e591c54c45" category="inline-link-macro">適用於Android用戶端的Microsoft WVD</block>
+  <block id="e171ab639221a7dd239974c2b86d2fa5" category="list-text"><block ref="e171ab639221a7dd239974c2b86d2fa5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5ff73d6f89b2579347681a57888a5" category="inline-link-macro">適用於MacOS用戶端的Microsoft WVD</block>
+  <block id="ff5a31bd5c49822af23db663021be551" category="list-text"><block ref="ff5a31bd5c49822af23db663021be551" category="inline-link-macro-rx"></block></block>
+  <block id="ab820e6f4b3da259f734f7719dc03beb" category="inline-link-macro">適用於iOS用戶端的Microsoft WVD</block>
+  <block id="c0f265d8b364ec0302ca37319c93f323" category="list-text"><block ref="c0f265d8b364ec0302ca37319c93f323" category="inline-link-macro-rx"></block></block>
+  <block id="f89a22674e8a92e50b2f8aad878c2dc1" category="section-title">服務元件</block>
+  <block id="221183f642ade47cc467abe7b9812d30" category="paragraph">VDM是一項共同管理的服務產品、結合NetApp與Microsoft的多項技術、並在EUC市場中應用20多年的最佳實務做法。所選元件清單下方會列出。並非所有元件都會在所有部署中使用、因為客戶需求各異。</block>
+  <block id="cfaa375bf6c7f9fcc1bc04d4f30c9154" category="section-title">NetApp</block>
+  <block id="8f53b5241aa3284f9058318dcbc2504d" category="inline-link-macro">產品統計（ ANF ） Azure NetApp Files</block>
+  <block id="807c90ee9f6f726952c2838ef0c351e1" category="list-text"><block ref="807c90ee9f6f726952c2838ef0c351e1" category="inline-link-macro-rx"></block></block>
+  <block id="e7c7def4c520da02d9d2de3af21bfe23" category="list-text">49位以上使用者部署的資料儲存層是以ANF為基礎。</block>
+  <block id="2b777d6a2e70fbbf8bc7129f2344fbdc" category="list-text">對於使用者少於250人的部署、則使用標準效能層。</block>
+  <block id="f01388bdfcc7b5decd2e457dd9643b4c" category="list-text">對於使用者人數超過249人的部署、則使用高階效能層級。</block>
+  <block id="43eacebb5257cc3f7ffeafcc431ace05" category="inline-link-macro">NetApp雲端備份</block>
+  <block id="707d9a52c2b2c0f6bad5780695b059cb" category="list-text"><block ref="707d9a52c2b2c0f6bad5780695b059cb" category="inline-link-macro-rx"></block></block>
+  <block id="e6d64656856b343cebd019acbb40b76a" category="list-text">NetApp Cloud Backup可用於備份ANF儲存磁碟區。</block>
+  <block id="dc188738e6cc2e9f8314e1b95f18ebfd" category="inline-link-macro">NetApp Cloud Sync</block>
+  <block id="1fa9af60cd9be0da37c7968ddb64376a" category="list-text"><block ref="1fa9af60cd9be0da37c7968ddb64376a" category="inline-link-macro-rx"></block></block>
+  <block id="9f518c7170c02cabfafe2faf89a81c4d" category="list-text">當Cloud Sync ANF是資料儲存層技術時、可使用NetApp功能將資料移轉至VDM。</block>
+  <block id="a1722ee1a41c4364dfc3dcf1cca5c81b" category="inline-link-macro">NetApp Cloud Insights</block>
+  <block id="4ee4516d2b6023b325419caa07f812a6" category="list-text"><block ref="4ee4516d2b6023b325419caa07f812a6" category="inline-link-macro-rx"></block></block>
+  <block id="91988dd1ea5b991fb85629c6b00d4540" category="list-text">我們Cloud Insights 的支援與服務團隊會使用NetApp產品來監控效能。</block>
+  <block id="bf32c55b9c9938dc916aec0ea1c0284c" category="inline-link-macro">NetApp VDM支援</block>
+  <block id="eeb24dc4a000ededfac7873179c95601" category="list-text"><block ref="eeb24dc4a000ededfac7873179c95601" category="inline-link-macro-rx"></block></block>
+  <block id="7719afad377344d8e2107f50bdf4e0f6" category="list-text">VDM包括全年無休的事件支援、以及由專業NetApp支援團隊提供的入門服務</block>
+  <block id="140864078aeca1c7c35b4beb33c53c34" category="section-title">Microsoft</block>
+  <block id="db518c790e08ef4681e765d4a8cb77bb" category="inline-link-macro">Azure檔案（自動對焦）</block>
+  <block id="5d4ee9d5685d5641ce2c8c2ba4dabe0c" category="list-text"><block ref="5d4ee9d5685d5641ce2c8c2ba4dabe0c" category="inline-link-macro-rx"></block></block>
+  <block id="f4ed5596725574cbc7927eae7b6c6adb" category="list-text">使用者人數少於50人的部署所需的資料儲存層、是以自動對焦技術為基礎。我們在GPv2儲存帳戶中設定「交易最佳化」層級。</block>
+  <block id="64cde2a8b64e175bcadca975c13f467d" category="list-text">對於使用者人數超過49人的部署、則使用ANF。</block>
+  <block id="2d5dc75ae0469095c0637f057c402dd9" category="inline-link-macro">Azure Cloud Backup</block>
+  <block id="ec91135da0e64bcbb6a4909a510f9421" category="list-text"><block ref="ec91135da0e64bcbb6a4909a510f9421" category="inline-link-macro-rx"></block></block>
+  <block id="ba9e9d4cfd02480f0d197ed3c3df3fb1" category="list-text">Azure Cloud Backup可用於備份自動對焦儲存磁碟區和虛擬機器。</block>
+  <block id="bebb460745cf70f0fb01567618da6ace" category="inline-link-macro">Azure檔案同步</block>
+  <block id="1d27d66e4d1610ec85aa556b17b7a21c" category="list-text"><block ref="1d27d66e4d1610ec85aa556b17b7a21c" category="inline-link-macro-rx"></block></block>
+  <block id="c06b0209ebb258572c8ca2cb4e428d7a" category="list-text">當自動對焦是資料儲存層技術時、Azure File Sync可用於將資料移轉至VDM。</block>
+  <block id="5108ba6c5030a5032f1009bc8c0607c2" category="inline-link-macro">Azure Defender</block>
+  <block id="2efda18dbfc1ccfbe33cd7fafa81c028" category="list-text"><block ref="2efda18dbfc1ccfbe33cd7fafa81c028" category="inline-link-macro-rx"></block></block>
+  <block id="6a9959db688a881cbcadb8dd291008c4" category="list-text">VDM會啟動（並包含）Azure Defender、這是環境中所有虛擬機器的進階安全服務。客戶及/或其IT服務供應商會透過Azure安全中心執行管理與管理。管理Azure安全中心並非VDM所包含的服務。</block>
+  <block id="ed826a0ea4b8d674a29a54acb3442471" category="inline-link-macro">Azure虛擬機器</block>
+  <block id="e76162ecb5c068d6b130db8ee5211596" category="list-text"><block ref="e76162ecb5c068d6b130db8ee5211596" category="inline-link-macro-rx"></block></block>
+  <block id="a88111f39da8a7274444b588481fee26" category="list-text">VDM非常仰賴Windows Azure虛擬機器來代管使用者工作階段和客戶應用程式。</block>
+  <block id="01296bd76cd8185c0501d04cce7a167b" category="inline-link-macro">Azure虛擬網路對等關係</block>
+  <block id="3979c7c151502e46a9cc9e3c8e0c6fcc" category="list-text"><block ref="3979c7c151502e46a9cc9e3c8e0c6fcc" category="inline-link-macro-rx"></block></block>
+  <block id="9796805885a1800afe1b14adffe2cb28" category="list-text">VDM可能運用Azure虛擬網路對等功能、與客戶現有的Active Directory網域控制器（AD DC）整合。</block>
+  <block id="1326428c52b039fd64ab59330a06ed7a" category="inline-link-macro">Azure VPN</block>
+  <block id="5f71288630df0d16ede6551b3df106ae" category="list-text"><block ref="5f71288630df0d16ede6551b3df106ae" category="inline-link-macro-rx"></block></block>
+  <block id="7d609d9814d7e154cd65f8ecdcdbe7ae" category="list-text">VDM可能利用Azure站台對站台VPN、與客戶現有的Active Directory網域控制器（AD DC）整合。</block>
+  <block id="f7896a449e94c533aa09253e7ec6a8e1" category="inline-link-macro">Windows虛擬桌面（WVD）</block>
+  <block id="1ee7e70fb1311d3977554f6ea305af4d" category="list-text"><block ref="1ee7e70fb1311d3977554f6ea305af4d" category="inline-link-macro-rx"></block></block>
+  <block id="907dd555fc3c0afb63583fc4457f11ca" category="list-text">VDM運用原生WVD功能來支援使用者工作階段代理、驗證、Windows授權等。</block>
+  <block id="e1fafd2510cd146e482a585fc2356d70" category="inline-link-macro">Azure AD Connect</block>
+  <block id="47d965a1630901daa52084062865e9c6" category="list-text"><block ref="47d965a1630901daa52084062865e9c6" category="inline-link-macro-rx"></block></block>
+  <block id="d7e7636ec23a129a1ecaa66e3d557b80" category="list-text">WVD要求本機網域（AD DC）和Azure AD必須透過Azure AD Connect應用程式同步。</block>
+  <block id="69e203f09b55e828d2192c6b402d4711" category="inline-link-macro">Microsoft 365（M365）</block>
+  <block id="85a1f43f633c5b533e51cfb59f99dda6" category="list-text"><block ref="85a1f43f633c5b533e51cfb59f99dda6" category="inline-link-macro-rx"></block></block>
+  <block id="6802bf293c3a3d6a57152760479f4d42" category="list-text">工作階段主機的WVD使用者工作階段和Windows 10 Enterprise會透過特定的M365授權類型授權給使用者。將適當的M365授權指派給所有的VDM使用者、是WVD和VDM的必要條件。此授權不包含在VDM中。客戶及/或其IT服務供應商有責任管理M365授權。</block>
+  <block id="2997e6a5bf6be5d5c8419a3213812536" category="summary">在VDM中新增使用者存取權限</block>
+  <block id="d642faecdf160dfb8644fb3fa136bccb" category="doc">新增使用者存取權</block>
+  <block id="471f93d68756f527284bc51eaf905dd1" category="section-title">新使用者建立</block>
+  <block id="f4219fd258da70da218e29b7aa9ce98f" category="list-title">新的Active Directory部署（為VDM建立新的Active Directory網域）</block>
+  <block id="02c095d06a6d1cdc05103497e307bb57" category="list-text">在VDS中建立使用者</block>
+  <block id="276e75d878376ba6611b9767ab595d74" category="list-text">瀏覽至工作區、選取「Users &amp; Groups（使用者與群組）」索引標籤、按一下「Add（新增）」、然後選取「Add User（新增使用者）」<block ref="01a7e13851148707d52a68eb54f00a1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="87220c67c72f0d298051345c32d4deac" category="list-text">填寫使用者資訊、然後按一下「新增使用者」<block ref="f9a3413134fff75f5a462338940fce3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fab5c136050045c86c6dda86d966205f" category="list-text">使用下列方法之一通知NetApp其他使用者</block>
+  <block id="3dcb90c689d5e13266b1241d68b0cbad" category="list-text">電子郵件支援：VDSsupport@netapp.com</block>
+  <block id="fdc2b135d9efecb3e1f2b4fca11dd892" category="list-text">將使用者指派至其主機集區</block>
+  <block id="ad0fbbe0d18dd45378f6ca0aa2500bb1" category="list-text">在使用者與群組索引標籤上、按一下連結至主機集區的使用者群組。例如、「Kift WVD Shared」群組會連結至VDM中的WVD共用主機集區。所有新增至「Kift WVD共享」的使用者、將會被指派「WVD共享」主機集區中的工作階段主機存取權。<block ref="52fe872693fa4a302fecc7ac8d9409f8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d81223cb2329228b3639c112f152f34" category="list-text">按一下「使用者」方塊右上角的編輯圖示、然後按一下「新增使用者」<block ref="f779d10d4b5a2a12e1bbcbfb50a562cb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b5fa21f0eb2d8b7fe1bfd9c95e541389" category="list-text">核取要新增之使用者旁的方塊、然後按一下「Continue（繼續）」<block ref="fe8ce930c30018c2fed04664cd787039" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">請按這裡</block>
+  <block id="2502824cec4d71acc93081cd6e05d3f4" category="list-text">如需更詳細的指示、請參閱 <block ref="c8dc0d78acf8a52218aa489a7ef1ee9d" category="inline-link-macro-rx"></block></block>
+  <block id="cb97f0bec1842e8c8a2d34fe19793d1b" category="list-title">現有Active Directory部署（VDM正在連線至現有Active Directory）</block>
+  <block id="075f4277f2f2fd3d1dfa5fe127b63805" category="list-text">依照正常方式在Active Directory中建立使用者</block>
+  <block id="ea9a80a8ebede4b24a7ffcb37da35fcb" category="list-text">將使用者新增至部署上所列的Active Directory群組<block ref="3d1e494df7d4c39ad677f1ad91e61fc8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="396f85e9c2391a975a7258e1a32ab806" category="list-text">啟用cloudWorkspace</block>
+  <block id="0bb5e291a8346bfbe1abcdb9b33e91ca" category="summary">在VDM中更新及部署VM映像</block>
+  <block id="9236529baf2a458da85cb99992dd40f4" category="doc">更新及部署VM映像</block>
+  <block id="8a17bedfe2ee407739d807567dc8d643" category="section-title">應用程式交付方法</block>
+  <block id="8aa58a967207a06b5c55918c6518e17f" category="paragraph">使用者可以存取任何安裝工作階段主機虛擬機器（SHVM）的應用程式、並在其中執行使用者工作階段。</block>
+  <block id="beb5d87fe3526985d13cb57799fd1448" category="paragraph">根據使用者群組的成員資格、將使用者指派給SHVM集區（「主機集區」）。該主機集區中的每個SHVM都是以相同的VM映像為基礎、擁有相同的應用程式、並在相同的VM資源上執行。每次使用者連線時、都會將其指派給主機集區中最少的目前使用者工作階段。</block>
+  <block id="6f19c28c9fc064fbf50be8c483387ef5" category="paragraph">透過從主機集區中的每個SHVM新增或移除應用程式、VDM管理員可以控制哪些應用程式VDM使用者可以存取。</block>
+  <block id="ad0fd6dc94ec49eef29883321644c80d" category="paragraph">從每個SHVM新增（或移除）應用程式、可直接在每個SHVM上執行、或是在單一VM映像上執行、然後再部署到主機集區中的所有SHVM上。</block>
+  <block id="8acadeccb90bf205135348e4902b9c20" category="inline-link-macro">本文</block>
+  <block id="c2583bd79f35d1fdfaf4832fc594e07a" category="paragraph">本文涵蓋VM映像管理。直接在SHVM上安裝應用程式的內容涵蓋在中 <block ref="33cb6a0164515f2f0ab6dc783a955d60" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba18948a82e24b426e5a72f2d0902865" category="section-title">正在更新VM映像</block>
+  <block id="ceaae77ce3a671c10b5ba688205bc95b" category="paragraph">建議將應用程式新增（或移除）至SHVM的方法、是編輯指派給主機集區的VM映像。虛擬機器映像經過自訂與驗證之後、VDM支援團隊即可根據要求將其部署至主機集區中的所有SHVM。</block>
+  <block id="e36aeacb8867d36675477317c9171a44" category="list-title">如何編輯VM映像</block>
+  <block id="6aba11bcdf4b1e91d230f5912ec2d899" category="list-text">在VDS入口網站的部署中瀏覽「資源配置集合」</block>
+  <block id="382d0f32201b4ccc098f087a2436cf06" category="list-text">按一下與您要更新的主機集區相關聯的資源配置集合。</block>
+  <block id="6c0ff8a5567842dfa1ee64d8b354e911" category="paragraph"><block ref="6c0ff8a5567842dfa1ee64d8b354e911" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3df87e9f2d03852531d7f34a5baf341" category="list-text">記下「Servers（伺服器）」區段中的「VM Template（VM範本）」名稱。</block>
+  <block id="6e61c51afb9d0a469e3c9ea737aca8b1" category="paragraph"><block ref="6e61c51afb9d0a469e3c9ea737aca8b1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e012c6c08105f159bae083124447c7ae" category="paragraph"><block ref="e012c6c08105f159bae083124447c7ae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b566a76fb68de3babffe22d88e1e7c3e" category="list-text">編輯伺服器範本、確保來源範本為步驟2.a中所述的VM範本以上。按一下「Continue（繼續）」</block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
+  <block id="fe619623ee4bf5904f210a60cf63df7a" category="paragraph"><block ref="fe619623ee4bf5904f210a60cf63df7a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="76f82382f0749e5a50b762a918028ea3" category="admonition">*請勿編輯這些設定：* 1.類型= VDI 2。共享磁碟機=空白3。最小快取= 0 4。Data Drive =未核取5.儲存類型= Standard_LRS</block>
+  <block id="6de3ef94ae2319b669043569d30ef7bc" category="list-text">VDM自動化現在將在Azure中建置暫用VM、機器名稱將為_CWT#_。建置此VM可能需要25分鐘。程序完成後、狀態會變更為「Pending（待處理）」</block>
+  <block id="fe057f36a544a8ec1a7f829f7f7a9fb1" category="list-text">請注意、此VM會在自訂程序完成之前執行、因此務必在一兩天內建置、自訂及驗證VM。</block>
+  <block id="245b93e1390f56d51ea505b78bbef646" category="list-text">一旦暫用VM準備就緒、您可以編輯Provisioning Collection、然後按一下伺服器上的「Connect（連線）」、登入VM。</block>
+  <block id="d1d3afc9697d853892811e7c1dad4def" category="list-text">系統提示輸入認證時、任何具有「PAM核准者」權限的VDM管理員都能產生網域管理認證。</block>
+  <block id="30541ed22d69997e599dc3adf418fc15" category="list-title">如何部署更新的VM映像</block>
+  <block id="c0b57b5a2501ec6d0ef82f17e00d086c" category="list-text">驗證VM映像之後、請聯絡VDM支援團隊、安排映像更新的時間。</block>
+  <block id="2208de05b3461ad36b9d2e8377cb3322" category="list-text">團隊將根據新映像建立新的工作階段主機。</block>
+  <block id="65972c6ef9da7713441d049ae0128e3c" category="list-text">如有需要、請協調測試新主機的時間、然後再將新使用者重新導向至新主機。</block>
+  <block id="99061db7a314c44533fe9c7c7fb25761" category="list-text">準備好之後、支援團隊會將所有新的使用者工作階段重新導向至新的主機。當沒有使用者連線時、我們會關閉舊主機。這些舊的VM將維持在取消分配狀態、以進行暖容錯移轉、但這些VM將在7天後自動清除。</block>
+  <block id="38e3e611d6a8eedc3b7a3bd5fea1cf33" category="section-title">直接變更SHVM</block>
+  <block id="37a128c0f52cb4d13156474d347e6749" category="paragraph">您可以直接在SHVM上手動或透過任何可用的自動化工具進行變更。如需詳細資訊、請參閱 <block ref="33cb6a0164515f2f0ab6dc783a955d60" category="inline-link-macro-rx"></block>。</block>
+  <block id="98d26d31f279875593ba96ea9fcf9a47" category="paragraph">直接變更主機集區中的SHVM時、請務必以相同方式設定每個SHVM、否則使用者在連線至不同的SHVM時、可能會有不一致的體驗。</block>
+  <block id="d595326786cb4f40d3d1a15219ccf443" category="admonition">根據預設、不會備份個別的SHVM、因為它們通常沒有唯一的資料、而且是以標準化的VM映像為基礎。如果您直接對SHVM進行自訂、請聯絡支援部門、以取得套用至主機集區中其中一個SHVM的備份原則。</block>
+  <block id="063086acb3cd3bc4bcd71bfb7cfb937f" category="section-title">SysPrep疑難排解</block>
+  <block id="0d1e6919f6a6eee5c22d9157b93a54bc" category="paragraph">VDM映像「驗證」功能使用Microsoft的SysPrep公用程式。驗證失敗時、最常見的原因是SysPrep故障。若要疑難排解失敗、請從位於CWT# VM上路徑：C：\windows\system32\sprep\panther\setupact.log的SysPrep記錄檔開始</block>
+  <block id="daf37e22be5944b91ad3e9f10bae946a" category="summary">在VDM中新增及移除管理員</block>
+  <block id="cd1072c0f5d3db1b2c15e15c34c852fd" category="section-title">在VDM中新增管理員</block>
+  <block id="a9cdcafa8b61ec6579c66a2df489614b" category="list-text">此程序由NetApp處理</block>
+  <block id="91e40577c319b6a01b52603f473309b3" category="list-text">請使用下列方法之一聯絡NetApp VDM支援部門：</block>
+  <block id="34d259745d3da613bcc0b3adfbc639ed" category="list-text">請針對新的系統管理帳戶提供下列資訊：</block>
+  <block id="fe9be8f63d5ba2087cd13852d40f6718" category="list-text">合作夥伴代碼</block>
+  <block id="21aef67e8d12503aff027385d0a7867f" category="list-text">名字和姓氏</block>
+  <block id="b357b524e740bc85b9790a0712d84a30" category="list-text">電子郵件地址</block>
+  <block id="1ba35231b4d109955cd66ed3863f0aa1" category="inline-link-macro">管理權限</block>
+  <block id="6fbc6323a3bfb526f94558882d009cac" category="list-text">如果有任何權限與中所述的預設設定不同 <block ref="2ede773ee6fbfa51f614196fcbee7730" category="inline-link-macro-rx"></block></block>
+  <block id="6dcbc4b0c3684e270a0c6cb85ab64330" category="section-title">移除VDI中的Admins</block>
+  <block id="b61edd6ca3ed9ef1fd846fbbb5a7743e" category="list-text">此程序由合作夥伴處理</block>
+  <block id="1bc0f19aeec5f7092afb1c27bae98524" category="list-text">瀏覽至「Admins」索引標籤</block>
+  <block id="da84b2cbcbf8cd7d0e828499fc7a32db" category="list-text">按一下您要移除之管理員右側的「行動點」</block>
+  <block id="eb497ca12d0310af894bdca08a29c76a" category="list-text">按一下「刪除」</block>
+  <block id="7f4aaf00d8a4414e162496ba9892f69a" category="list-text">隨即顯示確認方塊、請按一下「是、我確定」<block ref="742faf550871500875b02d7ef54940f0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7aa1916e49d82631e70edd9fdc8569fc" category="list-text">如果您有任何問題、請使用下列方法之一聯絡NetApp VDM支援部門：</block>
+  <block id="6f99cee9e9c33b41b074c633b3012168" category="summary">VDM先決條件</block>
+  <block id="7101d756d033177353d9f5c07dc1cca0" category="doc">虛擬桌面託管服務（VDM）先決條件</block>
+  <block id="4ab76886debf49d95b2a4fef582d15c7" category="section-title">M365授權</block>
+  <block id="b020d0c9b32e382959cf0dea2bead748" category="paragraph">VDM採用Microsoft Windows Virtual Desktop（WVD）技術打造而成。WVD先決條件要求為終端使用者指派特定的Microsoft 365（M365）授權。此授權不包含在VDM訂閱中、NetApp不會銷售或以其他方式提供此授權。</block>
+  <block id="cebd22a00d5013c15eed793e240502a6" category="paragraph">遵守M365/WVD授權的責任由客戶公司、合作夥伴公司及/或其M365廠商負責。</block>
+  <block id="19afb9d1ac9ba6fd860315f1ca7e0b69" category="inline-link-macro">請參閱此處</block>
+  <block id="b4235b06a6f6d504c028c18cce86b2ae" category="paragraph">M365計畫有多種、可支援VDM的WVD授權、詳情請參閱 <block ref="a742b0ae6bcc16874b13b2550124fc06" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2c95d84734b00e5ef2ef41173187dfd" category="section-title">M365/Azure AD租戶</block>
+  <block id="978a5d70cc4724762885eae4edefb265" category="paragraph">客戶必須擁有現有的Azure AD租戶。Microsoft 365採用相同的Azure AD租戶結構、因此符合M365授權要求（如上所述）也能滿足此需求。</block>
+  <block id="e60603a8c091ad4ecf4f13ef038c6993" category="section-title">CSP經銷商關係</block>
+  <block id="97c44aa79914d250c369d31952754f92" category="paragraph">NetApp使用我們與Microsoft的CSP合作關係、將VDM部署至專屬的Azure訂閱。若要部署此訂閱、NetApp必須與客戶的Azure AD租戶建立經銷商關係。客戶Azure AD租戶的全域管理員可在此接受此關係：</block>
+  <block id="76c466b535a024bf62441e55d148bff3" category="paragraph"><block ref="fa3fd739777b2eeb32cbdd79384ee355" category="inline-link-rx"></block></block>
+  <block id="28d1b9c40143d939044f58ee443457ae" category="paragraph">多重合作夥伴功能不具備：</block>
+  <block id="360ea3e16d3eacc3f4c40629ffacbe0f" category="list-text">變更客戶現有的任何訂閱內容</block>
+  <block id="8049eda9cbcf42194ddbf8e1247fef3a" category="list-text">轉換客戶現有的訂閱或帳戶所有權</block>
+  <block id="31aad5340a094333d0802dc580273698" category="list-text">變更現有任何訂閱的條款或客戶義務</block>
+  <block id="1e95b46571474c3be681a025af16355e" category="list-text">變更訂閱的記錄合作夥伴</block>
+  <block id="01f9d9cf2c00e8e734e6317025a5a247" category="list-text">詳細資訊請參閱：<block ref="6684da7473eb39e0e8cae311c4c6d92e" category="inline-link-rx"></block></block>
+  <block id="0fdcf23d7c1c245aaa0e4622d9b7c2cb" category="section-title">委派的管理權限</block>
+  <block id="b332ccf67aea6d555c7d8ac7a19d5c27" category="paragraph">邀請連結（如上所述）包含委派管理權限的要求。接受將授予客戶Azure AD租戶中的NetApp Global Admin和Helpdesk管理員角色。</block>
+  <block id="cb59dd4492601ed66800cb3e5c574545" category="section-title">虛擬網路範圍</block>
+  <block id="457656b9ef14bd283c9ef34d425f14b6" category="paragraph">VDM將部署在Azure的虛擬網路上。此網路使用的/20 IP範圍不能與環境中的其他網路重疊。</block>
+  <block id="2852f2aa3284e9a7c6058e6370337a56" category="paragraph">在任何在VDM虛擬網路與任何其他客戶網路之間新增網路連線的情況下、與其他網路IP範圍重疊會中斷VDM。因此、務必將完全未使用的/20範圍專用於VDM。</block>
+  <block id="3e501301e848b677583840429ef15a66" category="paragraph">/20網路範圍必須位於下列其中一個IP範圍內：</block>
+  <block id="9a209730b7f51b3e4565ad790589fc43" category="list-text">10.0.0.0–10.255.255.255</block>
+  <block id="14dd7fcccb4b74ca672c297d1cb6d665" category="list-text">172.16.0.0–172.31.255</block>
+  <block id="3829ec5f29f77c5b461342b2ed779339" category="list-text">192：168：0–192：255</block>
+  <block id="5cbad71b2e52d27af79f2dcc24f0c89f" category="section-title">部署VDM工作表</block>
+  <block id="40ecdaa6099a435c9140cf2050e6e8ab" category="paragraph">客戶/合作夥伴必須填寫Deploy VDM工作表、網址為：<block ref="407da3f6a76beb163cf0094e957ae19d" category="inline-link-rx"></block></block>
+  <block id="131e28f3148ad4a6d5f7dbcc7defb415" category="section-title">現有的AD整合</block>
+  <block id="9a2d2d00cc1c8fbdd604e7514b5e31f6" category="paragraph">將VDM與現有Active Directory網域控制器（AD DC）整合、需要幾項額外的先決條件：</block>
+  <block id="112b26ab610b8d0250bc550630221838" category="section-title">本機網域管理認證</block>
+  <block id="e1a9443c6e1bae566f0e44fe64344da0" category="paragraph">必須在現有網域上擁有網域加入權限的本機網域管理員帳戶、才能建立整合。</block>
+  <block id="67b732dc42aaffa9056d34cc477c863c" category="inline-link-macro">公用程式</block>
+  <block id="a25c024625e73e1fcccf495c1eda46e5" category="paragraph">WVD需要使用AD Connect將Azure AD AD與AD DC同步。如果尚未設定、請這麼做 <block ref="fd37678176db647d7dc18b476a126816" category="inline-link-macro-rx"></block> 必須在AD DC上安裝和設定。</block>
+  <block id="5017caf329e32c80bdc1556087e04c9e" category="paragraph">/== vNet對等網路的網路貢獻者角色/==本機閘道裝置設定VPN的管理權限/== DNS區域（需要更多技術資訊）/==無多網域資源、使用者必須位於我們要部署的網域中</block>
+  <block id="9ea543fb4e345eb6592d75458c4cb8b9" category="summary">VDM入門登陸頁面</block>
+  <block id="0f43cd3e37e1c436acacdca2fab71789" category="doc">VDM成功的入門步驟</block>
+  <block id="628360b99cb016f82f440ba3f28f67dd" category="section-title">什麼是VDM？</block>
+  <block id="46f6eded4cddfc975ecf5b02b64628dc" category="paragraph">虛擬桌面託管服務（VDM）是NetApp託管的DaaS解決方案、可讓您外包虛擬桌面資源配置、部署及基礎架構、讓您專注於使用者與應用程式、每位使用者每月只需支付一筆費用。</block>
+  <block id="9e8c3254392b0084af45f9288549cd6a" category="image-alt">登陸.getingstarted 3b8c5</block>
+  <block id="7e25ef1a019aa248e94eee9245e5873c" category="section-title">設定VDM</block>
+  <block id="c675fe9704554382bdbc8e66915b32c0" category="paragraph">VDM實作專案將包含下列項目：</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-link-macro">先決條件</block>
+  <block id="ec43c194067748b0549f1896c5e6e878" category="list-text"><block ref="ec43c194067748b0549f1896c5e6e878" category="inline-link-macro-rx"></block></block>
+  <block id="a9c7d144b19bd8fa62601d378a40ddd8" category="list-text">客戶環境審查啟動電話</block>
+  <block id="a6d1456f9736834bbdec181dd562a1e3" category="list-text">NetApp提供您的WVD基礎架構與工作區</block>
+  <block id="d267f2e895454b234815f27756e8bfa3" category="list-text">互動式現場訓練課程</block>
+  <block id="8b04ec4f75f0c22c4b6d210d421a717e" category="list-text">將您的資料、應用程式和使用者新增至自訂的WVD</block>
+  <block id="f883375f8137e6f142c56d7253cc6d08" category="list-text">測試環境、使用者桌面及連線能力</block>
+  <block id="9388501b767b546557d8a759950da26f" category="list-text">上線！</block>
+  <block id="d7fc8658f9e7754760fee0f4a1678e61" category="section-title">接下來呢？</block>
+  <block id="55f00fa354b9aa6365e1ebf8a7b5f33b" category="paragraph">為了確保部署成功且及時、請從下列步驟開始：</block>
+  <block id="501576b716eaba3643cdb8c08168f956" category="inline-link-macro">適當的Microsoft 365授權</block>
+  <block id="c39d5292515125e905d03aec97857354" category="list-text">取得 <block ref="78b612584e382737e76ece5c25add306" category="inline-link-macro-rx"></block> 適用於您的使用者</block>
+  <block id="8d99ef921e0276d963c6fb7cfa9590d4" category="list-text">建立VDM使用者清單</block>
+  <block id="9364c02e0d2095be3c95438f4e4fd602" category="list-text">建立應用程式、媒體、授權和廠商資訊清單、請注意可能需要特殊考量或廠商協助的任何資料庫或舊應用程式</block>
+  <block id="136212e967a2e7310317674555cf610d" category="list-text">識別需要傳輸的資料</block>
+  <block id="7aa38ffde78f8eb2c2324c370d860825" category="inline-link-macro">其他先決條件</block>
+  <block id="39c5623c1f9ec8914849d6cc41187f25" category="list-text">如果使用現有的Active Directory執行個體進行部署、請檢閱這些項目 <block ref="cf83f1297856ffc9b6be310d7cdeab76" category="inline-link-macro-rx"></block></block>
+  <block id="d3a38a38525619a60766615947e2efea" category="summary">VDM服務角色與責任</block>
+  <block id="005602cbcfd03b7cf963c6bb4a0eae8f" category="doc">VDM服務角色與責任</block>
+  <block id="96f45a5169265d06aeb96ba4d7a88462" category="summary">VDM服務項目摘要</block>
+  <block id="70522576fd7d9f0925f2cd2402000958" category="doc">虛擬桌面託管服務（VDM）服務摘要</block>
+  <block id="8071162c8da0f29504c0a424813d8b5d" category="section-title">使用者資源配置</block>
+  <block id="13bb5110902d802c85e027ab12a720d6" category="admonition">本文旨在準確說明VDM服務的技術詳細資料。服務詳細資料可能隨時變更、本文不代表NetApp與任何客戶或合作夥伴之間的任何現有協議、合約或其他安排的修改或變更。</block>
+  <block id="c701b955dfdc6e4e8a190529f6746e1e" category="section-title">共享使用者（SKU：VDMs-Subs-share-User）</block>
+  <block id="8fad8c69e075fc2661cc81aabb605480" category="paragraph">共用使用者工作階段可在工作階段主機虛擬機器（SHVM）上執行、最多可有10個使用者工作階段。分配的共享SHVM總數將確保環境中每10個共享使用者至少有一個共享SHVM。</block>
+  <block id="0898e2fd1f4443603008d48f7079c9b0" category="paragraph">*分配給每個共享使用者的資源：*</block>
+  <block id="4e425171e3570e45314831ebb1308604" category="list-text">vCPU核心的8/10分之一</block>
+  <block id="664d3d9378e9e2a9c16c8e7c60f922f9" category="list-text">6.4 GB RAM</block>
+  <block id="7132ebab180a554b623b31f1cdfc9f34" category="list-text">25 GiB儲存設備</block>
+  <block id="f8039904415b55195907fb24d1c456a3" category="paragraph">*共享SHVM技術詳細資料：*</block>
+  <block id="35eff763be0c4a28131f478c7c9ca164" category="inline-link-macro">ESv3</block>
+  <block id="e4f79b9787dd939692283f7e2d3e0055" category="inline-link-macro">Eav4.</block>
+  <block id="b638de3e953add99aed10f2b788118b1" category="inline-link-macro">Easyv4</block>
+  <block id="b7b861a49f90a10eb8dfc31f2966ada4" category="list-text">通常來自 <block ref="ed9cf184a4e673898e740e53c86b379f" category="inline-link-macro-rx"></block>、 <block ref="89d1beed2396587db0cfbec9daa997bf" category="inline-link-macro-rx"></block> 和 <block ref="2be2d37ef8c06ff181019e1e04bdcc77" category="inline-link-macro-rx"></block> Azure虛擬機器系列。</block>
+  <block id="e08f66ea7c7779e53aadae330f2f06ec" category="list-text">128 GiB標準SSD作業系統磁碟</block>
+  <block id="06580f6a8c004936f0620c96a2f49733" category="list-text">適用於虛擬桌面的Windows 10 Enterprise</block>
+  <block id="c958b26f95acbc7f0d62d8afe7e53a55" category="list-text">FSLogix附加的Container使用者設定檔</block>
+  <block id="2cec20f97814ee0af3125fba1c58673c" category="list-text">公司共用的附加儲存設備</block>
+  <block id="fd7a1486cadfbdcd514deb776e0f7789" category="section-title">VDI使用者（SKU：VDMs-subs-vVDI使用者）</block>
+  <block id="08dae8553f81b438e19b19846fde56f1" category="paragraph">VDI使用者的工作階段會在不同時裝載任何其他使用者工作階段的專用工作階段主機虛擬機器（SHVM）上執行。VDI SHVM總數等於環境中VDI使用者總數。</block>
+  <block id="8d87e391da5be7757ee01945bd114cb3" category="paragraph">*每個VDI使用者所配置的資源：*</block>
+  <block id="99014996950d469f81921dba47998707" category="list-text">2個vCPU核心</block>
+  <block id="e3e64e60045c5d89b9f2addc887abdc8" category="list-text">8 GB RAM</block>
+  <block id="35c71bd12d6cd818d6a57162805190c0" category="paragraph">* VDI SHVM技術詳細資料：*</block>
+  <block id="13e52e0f9b9e0dd182d82618fdb4316f" category="inline-link-macro">Dsv3</block>
+  <block id="cf1d671193d7766ada86fb0c46ea5e1f" category="inline-link-macro">達維4</block>
+  <block id="dbfca40478ffe4c54584645a377aeaa1" category="inline-link-macro">Dasv4</block>
+  <block id="cea32a3019fc5980c530f844a9636c55" category="list-text">通常來自 <block ref="9697dce2bcf67114d27237393027d225" category="inline-link-macro-rx"></block>、 <block ref="095f2e699aba0331095e70b01fe9667c" category="inline-link-macro-rx"></block> 和 <block ref="3e036509970960bd5056e1b4d52236bd" category="inline-link-macro-rx"></block> Azure虛擬機器系列。</block>
+  <block id="537e7ec705664da3e36c58a0855228ff" category="list-text">128 GiB標準HDD作業系統磁碟</block>
+  <block id="efdc8ab256c11020561f50283f989b21" category="section-title">GPU使用者（SKU：VDMs-subs-GPU使用者）</block>
+  <block id="032f26c6c680e23da95a0768542a01ae" category="paragraph">GPU使用者的工作階段會在不同時裝載任何其他使用者工作階段的專用工作階段主機虛擬機器（SHVM）上執行。GPU SHVM總數等於環境中GPU使用者總數。</block>
+  <block id="b08470dc26d2c68c8ffe0f05f8476db1" category="paragraph">*每GPU使用者所分配的資源：*</block>
+  <block id="9aff0efcaf7aa8ebcc772798c38c7089" category="list-text">8 GiB GPU RAM</block>
+  <block id="e8d94bb007a86c862d791623a75a5b92" category="paragraph">* GPU SHVM技術詳細資料：*</block>
+  <block id="6b444377efe5058dab7dce405542b207" category="inline-link-macro">NVv3</block>
+  <block id="ab003bb2af504bdc1890c7156c12f90d" category="inline-link-macro">NVv4</block>
+  <block id="9ffe83ad6819ce8af9df026ee2a12ed3" category="list-text">通常來自 <block ref="4ea7c48cd6617457bac8cc896bd2553e" category="inline-link-macro-rx"></block> 和 <block ref="0b543f3bc3eca6927ae971a0a3b696e9" category="inline-link-macro-rx"></block> Azure虛擬機器系列。</block>
+  <block id="eff88cd2787a7835276dec68d5017f78" category="section-title">其他VDM SKU</block>
+  <block id="8e9a2b5aade33ca7d989a8ed0803d7cf" category="section-title">商業伺服器（SKU：VDMs、Azure、企業VM）</block>
+  <block id="2f8f485c4d84e3dec215d3a46a97d940" category="paragraph">可以將商業伺服器新增至環境、以支援應用程式和服務。</block>
+  <block id="833a21998d6bf8cf0bee6bfd9755368e" category="paragraph">*每部企業伺服器VM至少分配：*</block>
+  <block id="cf9c8960c763aa7c2bce6433c941d296" category="list-text">8個vCPU核心</block>
+  <block id="a1e4922c6323d230b8cb5eafbd7a29cc" category="list-text">64 GB RAM</block>
+  <block id="d45e7a12c09e9a60a734fe0605f9b06b" category="list-text">Windows Server 2012R2/2016/2019</block>
+  <block id="0347997734e80a11ba4b7cf64ebecb9c" category="section-title">額外儲存設備（SKU：VDMs、1TB儲存設備- HPRSCLR）</block>
+  <block id="edcb3f5efd3f6b86bd2423b4c444f237" category="paragraph">_Data Storage Layer _是VDM環境的主要儲存機制、可在Azure Files或Azure NetApp Files Sfi（anf）上執行。使用的儲存技術取決於購買的VDI使用者總數。額外容量可以1TiB為單位增加。</block>
+  <block id="9d4ab1afe1fde908af9e0941140ee51c" category="paragraph">使用者設定檔、使用者資料、公司共用、應用程式資料和資料庫都應該從此儲存服務執行。最佳做法是盡量避免將資料儲存在VM磁碟上。</block>
+  <block id="81e8630cd70b11de2e40c88a75df2fb4" category="paragraph">容量是指每位使用者分配（每位使用者25 GiB）和所購買額外Tib儲存設備的總和。</block>
+  <block id="216ab40cda5c7c00ff42a4efb1827d89" category="cell">度量</block>
+  <block id="90bd28628286d0369bc5566d1ad7183d" category="inline-link-macro">Azure檔案GPv2</block>
+  <block id="83c096dc581b472a9917d93e1fd04742" category="cell"><block ref="83c096dc581b472a9917d93e1fd04742" category="inline-link-macro-rx"></block></block>
+  <block id="2ee56f38f9d514e4b86bd79b889a1fd6" category="inline-link-macro">ANF標準</block>
+  <block id="78873ec8d46ffae6610437508a974c62" category="cell"><block ref="78873ec8d46ffae6610437508a974c62" category="inline-link-macro-rx"></block></block>
+  <block id="ebe38988f3aab7bae61bbd1f603f8ef4" category="inline-link-macro">ANF Premium</block>
+  <block id="262554da97fff4ccb6d0f2ed70542373" category="cell"><block ref="262554da97fff4ccb6d0f2ed70542373" category="inline-link-macro-rx"></block></block>
+  <block id="7d83e72583af3d8a08a95140a5b1e3b6" category="cell">使用者計數</block>
+  <block id="742be8b47e2b32917e7a987968259cf4" category="cell">10-49</block>
+  <block id="7ded92bbd56e1e2cf180aaf70625c732" category="cell">50-249-50</block>
+  <block id="0e702a773d399722dd841bcde5c8be15" category="cell">超過250個</block>
+  <block id="9dba50d3a2c2f26daddbf9d144c49772" category="cell">最小尺寸</block>
+  <block id="272fce320d1d39a47ad589ea9ebc2af6" category="cell">250 GiB</block>
+  <block id="09db5cf9dee1953ac746dd636e0db3e0" category="cell">4 TiB</block>
+  <block id="79073619fba8242703524f16870ff858" category="cell">IOPS</block>
+  <block id="82072969a6f4a521b38eec5bfcbfa026" category="cell">最多1、000個</block>
+  <block id="26f11596d97c80193415e41391ec3e9a" category="cell">高達250/ TiB</block>
+  <block id="69a3be734586931892217fb735943524" category="cell">每TiB最高可達1、000次</block>
+  <block id="78e405c2589d4cf70f6c45795aeb39d9" category="summary">在主機集區內的工作階段主機上安裝應用程式</block>
+  <block id="f312c749ffc217d197a80a28842c8749" category="doc">在工作階段主機虛擬機器上安裝應用程式</block>
+  <block id="28c82cd98785586b2bd9658fccd627e3" category="paragraph">本文將直接在SHVM上安裝應用程式。VM映像管理涵蓋在中 <block ref="a92d27a5912cac3bb7dab83fae80db9f" category="inline-link-macro-rx"></block>。</block>
+  <block id="384aca537b9fadb1f16d457b39bc0857" category="section-title">手動存取</block>
+  <block id="6dee285c200485e340f5129cb6151dd9" category="paragraph">VDM管理入口網站可讓您透過所有SHVM和企業伺服器的即時本機管理帳戶、直接存取每個VM。此存取可用於手動連線至每個VM、以手動安裝應用程式並進行其他組態變更。</block>
+  <block id="3e2161b25ff5e0cec462c799d866da31" category="paragraph">此功能可在「工作區」&gt;「伺服器」&gt;「動作」&gt;「連線」中找到</block>
+  <block id="2e5ca9ce8338ed7e12248d0854d5eb10" category="paragraph"><block ref="2e5ca9ce8338ed7e12248d0854d5eb10" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="78104d1abd0bb7ff7a60f2b2646929b4" category="paragraph">如果需要網域管理認證、VDM會使用權限存取管理（PAM）功能來產生網域管理認證。詳細資料可以是 <block ref="6da78f0b3ed97d3f07b33982cff9a787" category="inline-link-macro-rx"></block>。</block>
+  <block id="73a293bc30e0480a720259fb32dfd519" category="section-title">VDM Automation</block>
+  <block id="c8791f687a8eab4bfce9fb57a97220a8" category="paragraph">透過VDM入口網站、「指令碼事件」區段包含遠端執行程式碼的功能。</block>
+  <block id="d5d86c8cb6f00e10e175218d58ee43f2" category="paragraph">在指令碼事件中、儲存庫索引標籤包含NetApp發佈的「全域」指令碼。您可以使用「+新增指令碼」按鈕來新增自訂指令碼。</block>
+  <block id="b518f4246510b7b2f0d7649dfa496519" category="paragraph">在「指令碼化事件」中、「活動」索引標籤包含觸發程序、可讓指令碼針對一組VM執行。對於VDM、「手動」和「排程」事件類型最適合在適當的虛擬機器上推送指令碼。</block>
+  <block id="cc6b191e16c485e0e10047bb40326fa1" category="admonition">活動有許多稱為「事件類型」的可用觸發程序。對於VDM、「應用程式安裝」和「應用程式解除安裝」類型不適用。這些都是RDS專屬的觸發事件、不應用於VDM、因為VDM是WVD型服務、而且必須遵循RDS的設計架構。</block>
+  <block id="9b8e7bd6e8e1746756967cb32d54e643" category="section-title">其他自動化工具</block>
+  <block id="768f9d7a0dd23b6ed00806d459f92faf" category="paragraph">VDI中的虛擬機器可使用協力廠商管理工具進行管理。應用程式變更和其他VM組態變更可透過任何相容的工具套用。</block>
+  <block id="7de5351aa3f0e1c125bbc2f8aea255b0" category="summary">將使用者指派給VDM中的應用程式群組</block>
+  <block id="b2466ad5a9f0a0d7121744e68a49f844" category="doc">將使用者指派給應用程式群組</block>
+  <block id="d16c04fc5ac4514bfdfbe3a54de8e738" category="section-title">使用者指派方法</block>
+  <block id="cfde6c3cf9bd451a997dbc5fd9f8d36c" category="paragraph">使用者會透過AD安全性群組指派給工作階段主機虛擬機器（SHVM）。</block>
+  <block id="4818e70e512f04e569bc147f99672272" category="paragraph">對於每個主機集區、工作區內的「使用者與群組」索引標籤上都有一個連結的使用者群組。</block>
+  <block id="def81129d67404cd415cf4304789c9fa" category="paragraph">使用者群組的命名方式為工作區ID（每個工作區有一個獨特的3到4位數代碼）、然後是主機集區的名稱。</block>
+  <block id="5eeef880d45bcdffcb46dc1a185c466c" category="paragraph">例如、「jzsx共享使用者」群組會連結至VDM中的「共享使用者」主機集區。所有新增至「jzsx共用使用者」的使用者、將會被指派「共用使用者」主機集區中的工作階段主機存取權。</block>
+  <block id="cad0242b88dfa70bcefc49b67f6c31b4" category="list-title">將使用者指派給其主機集區</block>
+  <block id="b48fbb3ce7b871fcd5d57edd7197dafc" category="list-text">瀏覽至工作區內的「使用者與群組」</block>
+  <block id="8902181431f3e2dc1b5daa9240fadf23" category="list-text">您可以編輯群組內的使用者清單、將使用者新增至群組。</block>
+  <block id="6c11b65ca6c64610ec3b88be316dc5a4" category="list-text">自動化功能會自動同步使用者群組的成員、讓使用者有權存取適當的主機集區、應用程式群組和應用程式。</block>
+  <block id="e21bb10544386e99214ffb3d1f6f0e69" category="admonition">只能將使用者指派給一個（及一個）應用程式群組。主機集區類型（共享、VDI或GPU）必須符合針對VDM所購買的授權SKU。如果使用者和/或指派給多個應用程式群組的方式不一致、將會造成資源爭用問題、並可能影響在環境中工作的同事。</block>
+  <block id="d7a0fdc3b195f0c6e1ed2198153b80bb" category="summary">VDS管理權限摘要</block>
+  <block id="5dc26064e87f654304131fcfd3daa69a" category="doc">VDS管理權限</block>
+  <block id="5b6882e7ef1f887ec6419b3daebc8735" category="section-title">管理權限總覽</block>
+  <block id="7e05b9cae4e3d540574176f7153fbf96" category="paragraph">VDM管理員對VDS管理入口網站的存取權有限。由於VDM是共同管理的解決方案、因此有些權限集並未啟用VDM管理員。這些行動保留給NetApp支援團隊。如果因為權限限制而無法執行某些必要行動、請聯絡支援部門以尋求協助。</block>
+  <block id="d05e9f08eecf734428d35a1fcedffb90" category="section-title">帳戶類型設定</block>
+  <block id="7cd4109429c8312a89ac1f49934f3ccf" category="paragraph">在VDM管理帳戶中、下列設定為預設值。</block>
+  <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
+  <block id="6b66a61fa66288a9a7ad6474d2e686ec" category="cell">預設值</block>
+  <block id="f4c6f851b00d5518bf888815de279aba" category="cell">附註</block>
+  <block id="d5e3e97669ced4708d68d647e525ce9e" category="cell">技術帳戶</block>
+  <block id="f8320b26d30ab433c5a54546d21f414c" category="cell">錯</block>
+  <block id="cf1b576e701e43c9c13c3f0208d89387" category="cell">可應NetApp支援部門的要求進行變更。啟用時、系統會在透過VDS入口網站連線至任何VM時提示系統管理員提供認證。停用時、系統會在透過VDS入口網站連線至任何租戶VM時、自動驗證管理員（使用自動產生的本機管理帳戶）。連線至任何平台伺服器VM時、系統仍會提示系統管理員輸入認證資料。</block>
+  <block id="49cc3c60e5e92840d647161b1a0d5674" category="inline-link-macro">PAM核准者</block>
+  <block id="ed7ed8349364aaa897c69891d2a45419" category="cell"><block ref="ed7ed8349364aaa897c69891d2a45419" category="inline-link-macro-rx"></block></block>
+  <block id="f827cf462f62848df37c5e1e94a4da74" category="cell">是的</block>
+  <block id="8ed2ba64fcd0132ae97f3a42e8532166" category="cell">可應NetApp支援部門的要求進行變更。所有客戶的PAM核准者必須至少啟用一個系統管理帳戶。</block>
+  <block id="c69eca844828e06e0640b3d2a0a3c143" category="cell">使用者支援</block>
+  <block id="cc03a2c33646dc588261f08a09cc9095" category="cell">此功能不適用於VDM。</block>
+  <block id="dc43bfde4556ec8545b0aa64ed23837b" category="cell">陰影使用者</block>
+  <block id="87c9d6a3251c3a06635ba622ff81145a" category="cell">可應NetApp支援部門的要求進行變更。啟用時、管理員可以連線至終端使用者的工作階段、並查看他們所看到的提供終端使用者支援的內容。</block>
+  <block id="26ab6a271aedb1fff35392d6cf869e3b" category="cell">MFA已啟用</block>
+  <block id="84e6972e06fa7b02bb1b7d57bc33d18c" category="cell">需要使用內建的MFA來保護管理員對VDM管理入口網站的存取權。支援SMS和/或電子郵件方法。</block>
+  <block id="7fcdb550ca4f1e48f367deba0c3ff630" category="section-title">管理帳戶權限</block>
+  <block id="72699bb96a95dff4248c8236e66e1193" category="paragraph">在VDM管理帳戶中、下列權限為預設權限。</block>
+  <block id="e55f75a29310d7b60f7ac1d390c8ae42" category="cell">模組</block>
+  <block id="4351cfebe4b61d8aa5efa1d020710005" category="cell">檢視</block>
+  <block id="7dce122004969d56ae2e0245cb754d35" category="cell">編輯</block>
+  <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">刪除</block>
+  <block id="ec211f7c20af43e742bf2570c3cb84f9" category="cell">新增</block>
+  <block id="e3afed0047b08059d0fada10f400c1e5" category="cell">管理</block>
+  <block id="521c36a31c2762741cf0f8890cbe05e3" category="cell">開啟</block>
+  <block id="d15305d7a4e34e02489c74a5ef542f36" category="cell">關</block>
+  <block id="55c32b406a415642c4be28bb7f15e18f" category="cell">新增管理帳戶及/或變更管理權限、由NetApp支援部門負責處理。</block>
+  <block id="55897b2ee79066418cbb79cd09d7de56" category="cell">應用程式服務</block>
+  <block id="4cfff72719609c16d511a3037d4a6781" category="cell">VDI不支援應用程式服務功能集。</block>
+  <block id="1ddf333c6654f7f89c739dddfb4cc429" category="cell">應用程式</block>
+  <block id="9d1fc783a2a3cae6f5113ecc305826ef" category="inline-link-macro">更新及部署映像</block>
+  <block id="fa54b0f3b62ce93c357e436e8a9a9a57" category="cell">VDS中的應用程式功能集是RDS專屬的。VDM是以WVD為基礎的服務、應用程式管理則不會以此功能來處理。請參閱 <block ref="a532c9f084f46c6a855d757a074bb9f3" category="inline-link-macro-rx"></block> 以取得有關VDI應用程式交付的詳細資料。</block>
+  <block id="b06c94565d768dd75535120f2f8482a7" category="cell">稽核</block>
+  <block id="0f558243fbf45f1cd840fff01957f57b" category="cell">用戶端</block>
+  <block id="d4130240f822c63ce2fe56c9525a16a0" category="cell">用戶端建立/移除由NetApp支援部門負責。</block>
+  <block id="3081015fddfcd25b52903a5dc112ca7c" category="cell">部署</block>
+  <block id="04fd763440a9d9b21f290ecd48769379" category="cell">部署的建立/移除作業由NetApp支援部門負責。</block>
+  <block id="483a9d9cfd5caf508318528d7d33ee55" category="cell">防火牆規則</block>
+  <block id="60c7502b5c40479908aed919a94c1786" category="cell">資料夾</block>
+  <block id="a37ede293936e29279ed543129451ec3" category="cell">群組</block>
+  <block id="02ebd0b80e8dfe739d455ae3325ce3e3" category="cell">刪除使用者群組是由NetApp支援部門處理。某些使用者群組為必填欄位</block>
+  <block id="fd6df34ee4e7642c02ced6012028f6b8" category="cell">合作夥伴</block>
+  <block id="84b1175bc23ed9e1d51a477c4e6ea2af" category="cell">VDI不支援合作夥伴功能集。檢視顯示租戶清單所需的權限。</block>
+  <block id="5760353c204c96a4ad1c2a433433f44c" category="cell">資源配置範本</block>
+  <block id="ee8f950230eb6736fe74838884276d10" category="cell">映像建立/移除由NetApp支援部門負責。</block>
+  <block id="c91c7b93c28cd18741b71f727ee81ee3" category="cell">報告</block>
+  <block id="ddcf50c29294d4414f3f7c1bbc892cb5" category="cell">資源</block>
+  <block id="8fde96b6b53ed8ff01b171b2558707ac" category="cell">資源設定由NetApp支援部門處理。</block>
+  <block id="78054cd2f54e3e84c28c8b0c14457ef6" category="cell">指令碼事件</block>
+  <block id="ac659513b2353187192e88c5d1988228" category="cell">伺服器</block>
+  <block id="025d4c0374ab8ff0ebbdfed77eadf7b8" category="cell">伺服器建立/移除設定由NetApp支援部門處理。</block>
+  <block id="aa1315a19149418839bbbc0f0063228b" category="cell">服務主機板</block>
+  <block id="f4f70727dc34561dfde1a3c529b6205c" category="cell">設定</block>
+  <block id="f9aae5fda8d810a29f12d1e61b4ab25f" category="cell">使用者</block>
+  <block id="d5e92609cf510f5f97ac326e907a0540" category="cell">工作區</block>
+  <block id="8c541e8ad3aab98d9c2dbac2472ab7e2" category="cell">工作區的建立/移除作業由NetApp支援部門負責。</block>
+  <block id="40672ff87dc9f7a95a33c7216ee64955" category="summary">移除VDI中的使用者存取權</block>
+  <block id="49c9243c88915c1393a41cd9bfdb96f1" category="doc">移除使用者存取權</block>
+  <block id="1896c044e89799022bf8b538b4dd6c09" category="section-title">移除使用者</block>
+  <block id="2b5800940254d7c3cd649bd2cc45b7b7" category="list-text">刪除VDM中的使用者</block>
+  <block id="f67f2cec4fbbaba4514eb9129596a00d" category="list-text">瀏覽至工作區、選取「Users &amp; Groups（使用者與群組）」索引標籤、按一下要刪除之使用者旁的動作點、然後按一下「Delete（刪除）」<block ref="49be77491de3fa79d6b69f67f8eb9945" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b801b82b5f5c4f8c12461f94512f0c19" category="list-text">此時會出現快顯視窗、其中包含「延遲刪除及從目錄刪除」選項<block ref="e4d8b0c6abbd02cd29ebc471401474f5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c96013281d49394c4634c7403a096b41" category="list-text">「延遲刪除」選項會在刪除使用者之前等待90分鐘、以便取消程序。建議勾選此方塊。</block>
+  <block id="a6d17d9281a07ff82516c72f719bb1ec" category="list-text">「從目錄刪除」選項會刪除Active Directory使用者帳戶。應勾選此方塊。</block>
+  <block id="073d48bdb0d4f50dc5fb4b34aa19a824" category="list-text">使用下列方法之一、通知NetApp使用者移除</block>
+  <block id="a7f7992bbd09f7d531e95587a1bb3f68" category="list-text">此時會出現快顯視窗、其中包含「延遲刪除及從目錄刪除」選項<block ref="bae6ebac53fd14801b2950e669918fa9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9d08fd81c8e53570265128157d3fff6" category="list-text">「從目錄刪除」選項會刪除Active Directory使用者帳戶。建議您不要勾選此方塊、並遵循您組織的使用者帳戶刪除程序、從Active Directory刪除帳戶。</block>
+  <block id="0254b4a00a794d40ac59967a8fdbee36" category="sidebar">VDM文件</block>
+  <block id="bf647454e36069fd16f1a7a35cf6a865" category="sidebar">快速入門</block>
+  <block id="cf1ace6c8363604069581ea6bf9184b7" category="sidebar">服務摘要</block>
+  <block id="130ddfce9c28453883ccfe2da8b6d5ac" category="sidebar">教學課程</block>
+  <block id="ab9cffca9a784227a73f68923d4eaa2e" category="sidebar">安裝應用程式</block>
+  <block id="bc3b078bb1277873f2454c615089dd7c" category="sidebar">更新部署VM映像</block>
+  <block id="80d4e33eb5b2f3446ea718da47a8df44" category="sidebar">將使用者指派給應用程式群組</block>
+  <block id="be23cb36ea7e7c431648affa1db4d34b" category="sidebar">取得網域管理認證</block>
+  <block id="b2ea58473050d845231730d4a0ee13f3" category="sidebar">新增使用者存取權</block>
+  <block id="731bcdce0a7b844ed7b28fc80a338f4f" category="sidebar">移除使用者存取權</block>
+  <block id="f7dca0ff3aa4294b3f0d90f8edcaec5d" category="sidebar">新增/移除系統管理員</block>
+  <block id="063eef420fb2709abeb35146c37743ab" category="sidebar">VDM常見問題集</block>
+</blocks>

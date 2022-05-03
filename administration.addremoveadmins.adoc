@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: administration.addremoveadmins.html 
+summary: 在VDM中新增及移除管理員 
+keywords:  
+---
+= 在VDM中新增及移除管理員
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 在VDM中新增管理員
+
+* 此程序由NetApp處理
+* 請使用下列方法之一聯絡NetApp VDM支援部門：
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+* 請針對新的系統管理帳戶提供下列資訊：
++
+.. 合作夥伴代碼
+.. 名字和姓氏
+.. 電子郵件地址
+.. 如果有任何權限與中所述的預設設定不同 link:FAQ.vdsadminpermissions.html["管理權限"]
+
+
+
+
+
+
+== 移除VDI中的Admins
+
+* 此程序由合作夥伴處理
++
+.. 瀏覽至「Admins」索引標籤
+.. 按一下您要移除之管理員右側的「行動點」
+.. 按一下「刪除」
+.. 隨即顯示確認方塊、請按一下「是、我確定」image:administration.addremoveadmins01.png["900900"]
+
+
+* 如果您有任何問題、請使用下列方法之一聯絡NetApp VDM支援部門：
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+

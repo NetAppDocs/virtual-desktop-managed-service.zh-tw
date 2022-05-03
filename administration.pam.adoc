@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: administration.pam.html 
+summary: 取得VDM虛擬機器的網域存取權 
+keywords:  
+---
+= 在VDM中產生網域管理認證
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 權限存取管理
+
+VDM管理員可獲授予「PAM核准者」角色、讓管理員能夠授予PAM要求。
+
+當即時本機管理員認證不足時、PAM要求會產生網域層級管理員帳戶、以用於在VDM VM上進行驗證。
+
+任何VDM管理員都可以提交PAM要求、但只有具備PAM核准者角色的管理員才能核准要求。PAM核准者可以申請及核准自己的申請。
+
+
+
+=== 提交PAM要求
+
+.以提交PAM要求
+. 瀏覽至右上角的管理員使用者名稱、然後按一下「設定」
+. 選取「PAM要求」索引標籤
+. 按一下「+新增」
++
+.. 選取期間、之後這些認證資料將過期
+.. 選擇部署
+.. 輸入可提供認證資料的電子郵件地址。這可以是任何電子郵件地址、允許第三方（例如廠商）獲得網域認證。
+.. 輸入可接收文字訊息的電話號碼
+.. 輸入記錄和PAM核准者要審查的任何附註。
+
+
+. 按一下「新增要求」
+
+
+
+
+=== 核准PAM要求
+
+.以檢閱及核准/拒絕PAM要求
+. 。瀏覽至右上角的管理員使用者名稱、然後按一下「設定」
+. 選取「PAM要求」索引標籤、然後按一下該要求
+. 檢閱申請、然後按一下「Approve（核准）」或「Reject（拒絕）」
+. 輸入任何與核准/拒絕決策相關的附註
+
+
+
+
+=== 使用PAM產生的認證資料
+
+核准後、系統會傳送一封確認電子郵件、以啟動所提供的認證資料：
+
+[role="thumb"]
+image:administration.pam-c2382.png["900900"]
+
+依照「啟用要求」連結、使用者將會前往下一頁、並透過SMS傳送確認代碼給他們。系統也會要求他們設定安全密碼。
+
+[role="thumb"]
+image:administration.pam-ea1ea.png["900900"]
+
+成功驗證帳戶後、使用者會收到使用者名稱的確認訊息。
+
+[role="thumb"]
+image:administration.pam-01f30.png["900900"]

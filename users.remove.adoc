@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: users.remove.html 
+summary: 移除VDI中的使用者存取權 
+keywords:  
+---
+= 移除使用者存取權
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 移除使用者
+
+.新的Active Directory部署（為VDM建立新的Active Directory網域）
+. 刪除VDM中的使用者
++
+.. 瀏覽至工作區、選取「Users & Groups（使用者與群組）」索引標籤、按一下要刪除之使用者旁的動作點、然後按一下「Delete（刪除）」image:users.remove01.png["900900"]
+.. 此時會出現快顯視窗、其中包含「延遲刪除及從目錄刪除」選項image:users.remove02.png["900900"]
++
+... 「延遲刪除」選項會在刪除使用者之前等待90分鐘、以便取消程序。建議勾選此方塊。
+... 「從目錄刪除」選項會刪除Active Directory使用者帳戶。應勾選此方塊。
+
+
+
+
+. 使用下列方法之一、通知NetApp使用者移除
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+
+
+.現有Active Directory部署（VDM正在連線至現有Active Directory）
+. 刪除VDM中的使用者
++
+.. 瀏覽至工作區、選取「Users & Groups（使用者與群組）」索引標籤、按一下要刪除之使用者旁的動作點、然後按一下「Delete（刪除）」image:users.remove01.png["900900"]
+.. 此時會出現快顯視窗、其中包含「延遲刪除及從目錄刪除」選項image:users.remove03.png["900900"]
++
+... 「延遲刪除」選項會在刪除使用者之前等待90分鐘、以便取消程序。建議勾選此方塊。
+... 「從目錄刪除」選項會刪除Active Directory使用者帳戶。建議您不要勾選此方塊、並遵循您組織的使用者帳戶刪除程序、從Active Directory刪除帳戶。
+
+
+
+
+. 使用下列方法之一、通知NetApp使用者移除
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+

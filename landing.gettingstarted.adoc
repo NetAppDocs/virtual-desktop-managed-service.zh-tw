@@ -1,0 +1,56 @@
+---
+sidebar: sidebar 
+permalink: landing.gettingstarted.html 
+summary: VDM入門登陸頁面 
+keywords:  
+---
+= VDM成功的入門步驟
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 什麼是VDM？
+
+虛擬桌面託管服務（VDM）是NetApp託管的DaaS解決方案、可讓您外包虛擬桌面資源配置、部署及基礎架構、讓您專注於使用者與應用程式、每位使用者每月只需支付一筆費用。
+
+image::landing.gettingstarted-3b8c5.png[登陸.getingstarted 3b8c5]
+
+
+
+== 設定VDM
+
+VDM實作專案將包含下列項目：
+
+. link:serviceoffering.prerequisites.html["先決條件"]
+. 客戶環境審查啟動電話
+. NetApp提供您的WVD基礎架構與工作區
+. 互動式現場訓練課程
+. 將您的資料、應用程式和使用者新增至自訂的WVD
+. 測試環境、使用者桌面及連線能力
+. 上線！
+
+
+
+
+== 接下來呢？
+
+為了確保部署成功且及時、請從下列步驟開始：
+
+. 取得 link:serviceoffering.prerequisites.html#m365-licensing["適當的Microsoft 365授權"] 適用於您的使用者
+. 建立VDM使用者清單
+. 建立應用程式、媒體、授權和廠商資訊清單、請注意可能需要特殊考量或廠商協助的任何資料庫或舊應用程式
+. 識別需要傳輸的資料
+. 如果使用現有的Active Directory執行個體進行部署、請檢閱這些項目 link:serviceoffering.prerequisites.html#existing-ad-integration["其他先決條件"]
+

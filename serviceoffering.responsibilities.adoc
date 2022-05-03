@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: serviceoffering.responsibilities.html 
+summary: VDM服務角色與責任 
+keywords:  
+---
+= VDM服務角色與責任
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+

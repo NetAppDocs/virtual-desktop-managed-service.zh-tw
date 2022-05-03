@@ -1,0 +1,69 @@
+---
+sidebar: sidebar 
+permalink: users.add.html 
+summary: 在VDM中新增使用者存取權限 
+keywords:  
+---
+= 新增使用者存取權
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 新使用者建立
+
+.新的Active Directory部署（為VDM建立新的Active Directory網域）
+. 在VDS中建立使用者
++
+.. 瀏覽至工作區、選取「Users & Groups（使用者與群組）」索引標籤、按一下「Add（新增）」、然後選取「Add User（新增使用者）」image:users.add01.png["900900"]
+.. 填寫使用者資訊、然後按一下「新增使用者」image:users.add02.png["900900"]
+
+
+. 使用下列方法之一通知NetApp其他使用者
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+. 將使用者指派至其主機集區
++
+.. 在使用者與群組索引標籤上、按一下連結至主機集區的使用者群組。例如、「Kift WVD Shared」群組會連結至VDM中的WVD共用主機集區。所有新增至「Kift WVD共享」的使用者、將會被指派「WVD共享」主機集區中的工作階段主機存取權。image:users.add03.png["900900"]
+.. 按一下「使用者」方塊右上角的編輯圖示、然後按一下「新增使用者」image:users.add04.png["900900"]
+.. 核取要新增之使用者旁的方塊、然後按一下「Continue（繼續）」image:users.add05.png["900900"]
+.. 如需更詳細的指示、請參閱 link:users.assigntoappgroup.html["請按這裡"]
+
+
+
+
+.現有Active Directory部署（VDM正在連線至現有Active Directory）
+. 依照正常方式在Active Directory中建立使用者
+. 將使用者新增至部署上所列的Active Directory群組image:users.add06.png["900900"]
+. 啟用cloudWorkspace
+. 使用下列方法之一通知NetApp其他使用者
++
+.. 電子郵件支援：VDSsupport@netapp.com
+.. 電話支援：8444.645.6789
+.. link:https://cloudjumper.zendesk.com["VDM支援入口網站"]
+
+
+. 將使用者指派至其主機集區
++
+.. 在使用者與群組索引標籤上、按一下連結至主機集區的使用者群組。例如、「Kift WVD Shared」群組會連結至VDM中的WVD共用主機集區。所有新增至「Kift WVD共享」的使用者、將會被指派「WVD共享」主機集區中的工作階段主機存取權。image:users.add03.png["900900"]
+.. 按一下「使用者」方塊右上角的編輯圖示、然後按一下「新增使用者」image:users.add04.png["900900"]
+.. 核取要新增之使用者旁的方塊、然後按一下「Continue（繼續）」image:users.add05.png["900900"]
+.. 如需更詳細的指示、請參閱 link:users.assigntoappgroup.html["請按這裡"]
+
+
+

@@ -1,0 +1,108 @@
+---
+sidebar: sidebar 
+permalink: images.updateimages.html 
+summary: 在VDM中更新及部署VM映像 
+keywords:  
+---
+= 更新及部署VM映像
+:toc: macro
+:hardbreaks:
+:toclevels: 2
+:allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: 
+:toc-position: content
+
+
+
+
+== 應用程式交付方法
+
+使用者可以存取任何安裝工作階段主機虛擬機器（SHVM）的應用程式、並在其中執行使用者工作階段。
+
+根據使用者群組的成員資格、將使用者指派給SHVM集區（「主機集區」）。該主機集區中的每個SHVM都是以相同的VM映像為基礎、擁有相同的應用程式、並在相同的VM資源上執行。每次使用者連線時、都會將其指派給主機集區中最少的目前使用者工作階段。
+
+透過從主機集區中的每個SHVM新增或移除應用程式、VDM管理員可以控制哪些應用程式VDM使用者可以存取。
+
+從每個SHVM新增（或移除）應用程式、可直接在每個SHVM上執行、或是在單一VM映像上執行、然後再部署到主機集區中的所有SHVM上。
+
+本文涵蓋VM映像管理。直接在SHVM上安裝應用程式的內容涵蓋在中 link:applications.installapplications.html["本文"]。
+
+
+
+=== 正在更新VM映像
+
+建議將應用程式新增（或移除）至SHVM的方法、是編輯指派給主機集區的VM映像。虛擬機器映像經過自訂與驗證之後、VDM支援團隊即可根據要求將其部署至主機集區中的所有SHVM。
+
+.如何編輯VM映像
+. 在VDS入口網站的部署中瀏覽「資源配置集合」
+. 按一下與您要更新的主機集區相關聯的資源配置集合。
++
+[role="thumb"]
+image:applications.addtoapplibrary-fdcc3.png["900900"]
+
++
+.. 記下「Servers（伺服器）」區段中的「VM Template（VM範本）」名稱。
++
+[role="thumb"]
+image:applications.deployapps-0e39c.png["900900"]
+
++
+[role="thumb"]
+image:applications.deployapps-c642c.png["900900"]
+
+
+
+. 編輯伺服器範本、確保來源範本為步驟2.a中所述的VM範本以上。按一下「Continue（繼續）」
++
+[role="thumb"]
+image:applications.deployapps-307cb.png[""]
+
+
+
+
+NOTE: *請勿編輯這些設定：* 1.類型= VDI 2。共享磁碟機=空白3。最小快取= 0 4。Data Drive =未核取5.儲存類型= Standard_LRS
+
+. VDM自動化現在將在Azure中建置暫用VM、機器名稱將為_CWT#_。建置此VM可能需要25分鐘。程序完成後、狀態會變更為「Pending（待處理）」
++
+.. 請注意、此VM會在自訂程序完成之前執行、因此務必在一兩天內建置、自訂及驗證VM。
+
+
+. 一旦暫用VM準備就緒、您可以編輯Provisioning Collection、然後按一下伺服器上的「Connect（連線）」、登入VM。
++
+.. 系統提示輸入認證時、任何具有「PAM核准者」權限的VDM管理員都能產生網域管理認證。
+
+
+
+
+.如何部署更新的VM映像
+. 驗證VM映像之後、請聯絡VDM支援團隊、安排映像更新的時間。
+. 團隊將根據新映像建立新的工作階段主機。
++
+.. 如有需要、請協調測試新主機的時間、然後再將新使用者重新導向至新主機。
+
+
+. 準備好之後、支援團隊會將所有新的使用者工作階段重新導向至新的主機。當沒有使用者連線時、我們會關閉舊主機。這些舊的VM將維持在取消分配狀態、以進行暖容錯移轉、但這些VM將在7天後自動清除。
+
+
+
+
+=== 直接變更SHVM
+
+您可以直接在SHVM上手動或透過任何可用的自動化工具進行變更。如需詳細資訊、請參閱 link:applications.installapplications.html["本文"]。
+
+直接變更主機集區中的SHVM時、請務必以相同方式設定每個SHVM、否則使用者在連線至不同的SHVM時、可能會有不一致的體驗。
+
+
+WARNING: 根據預設、不會備份個別的SHVM、因為它們通常沒有唯一的資料、而且是以標準化的VM映像為基礎。如果您直接對SHVM進行自訂、請聯絡支援部門、以取得套用至主機集區中其中一個SHVM的備份原則。
+
+
+
+=== SysPrep疑難排解
+
+VDM映像「驗證」功能使用Microsoft的SysPrep公用程式。驗證失敗時、最常見的原因是SysPrep故障。若要疑難排解失敗、請從位於CWT# VM上路徑：C：\windows\system32\sprep\panther\setupact.log的SysPrep記錄檔開始
