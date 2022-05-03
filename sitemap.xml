@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  
+    
+    
+  
+
+  
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/FAQ.vdsadminpermissions.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/administration.addremoveadmins.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/administration.pam.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/applications.installapplications.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/images.updateimages.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/landing.gettingstarted.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service//search.html</loc>
+      
+      <lastmod>2022-05-03T06:09:24+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/serviceoffering.prerequisites.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/serviceoffering.responsibilities.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/serviceoffering.servicesummary.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/users.add.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/users.assigntoappgroup.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>https://docs.netapp.com/zh-tw/virtual-desktop-managed-service/users.remove.html</loc>
+      
+      <lastmod>2022-05-03T06:09:08+00:00</lastmod>
+      
+    </url>
+  
+
+  
+  
+</urlset>
